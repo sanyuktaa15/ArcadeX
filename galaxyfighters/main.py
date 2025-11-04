@@ -172,7 +172,7 @@ def main():
         handle_bullets(yellow_bullets, red_bullets, yellow, red)
 
         draw_window(red, yellow, red_bullets, yellow_bullets,
-                    red_health, yellow_health)
+                            red_health, yellow_health)
 
     main()
 
