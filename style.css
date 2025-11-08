@@ -8,6 +8,14 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+
+  background-image: url('./background images/bg.png'); 
+  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-attachment: fixed;  
+  /* Important for covering the whole page: */ 
+  width: 100%;
+  min-height: 100vh; 
 }
 
 /* --- Start Page --- */
@@ -20,7 +28,8 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  margin-bottom: 0px;
+  font-size: 4rem;
   color: #ffea00;
   text-shadow: 0 0 10px #ffea00, 0 0 25px #ff2a00;
 }
@@ -30,14 +39,16 @@ body {
 }
 
 button {
-  margin-top: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 3rem;
   background-color: #ff2a00;
-  color: black;
-  border: 2px solid #ffea00;
-  font-size: 0.8rem;
+  color: white;
+  font-size: 15px;
   padding: 15px 30px;
   cursor: pointer;
   transition: 0.3s;
+  border-radius:9px ;
+  border-width: 0px;
 }
 
 button:hover {
@@ -52,10 +63,11 @@ button:hover {
 /* --- Game Menu Page --- */
 #game-section {
   padding: 40px 20px;
+  color: #ffea00;
 }
 
 #game-section h2 {
-  color: #ffea00;
+  
   font-size: 1rem;
   margin-bottom: 2rem;
 }
