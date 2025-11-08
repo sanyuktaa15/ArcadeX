@@ -165,7 +165,7 @@ def main():
             draw_winner(winner_text)
             break
 
-        keys_pressed = py game.key.get_pressed()
+        keys_pressed = pygame.key.get_pressed()
         yellow_handle_movement(keys_pressed, yellow)
         red_handle_movement(keys_pressed, red)
 
