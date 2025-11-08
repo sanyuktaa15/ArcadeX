@@ -30,7 +30,7 @@ YELLOW_HIT = pygame.USEREVENT + 1
 RED_HIT = pygame.USEREVENT + 2
 
 YELLOW_SPACESHIP_IMAGE = pygame.image.load(
-    os.path.join('Assets','spaceship_yellow.png'))
+    os.path.join('Assets', 'spaceship_yellow.png'))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
     YELLOW_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 90)
 
@@ -165,14 +165,14 @@ def main():
             draw_winner(winner_text)
             break
 
-        keys_pressed = pygame.key.get_pressed()
+        keys_pressed = py game.key.get_pressed()
         yellow_handle_movement(keys_pressed, yellow)
         red_handle_movement(keys_pressed, red)
 
         handle_bullets(yellow_bullets, red_bullets, yellow, red)
 
         draw_window(red, yellow, red_bullets, yellow_bullets,
-                            red_health, yellow_health)
+                    red_health, yellow_health)
 
     main()
 
