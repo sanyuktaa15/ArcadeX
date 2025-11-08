@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.container {
+  margin-top: 20vh;
+}
+
+.title {
+  font-size: 3em;
+  color: #ffea00;
+  text-shadow: 0 0 10px #ffea00, 0 0 20px #ff2a00;
+}
+
+.x {
+  color: #ff2a00;
+}
+
+#start-btn {
+  margin-top: 40px;
+  padding: 15px 40px;
+  font-size: 1em;
+  border: 2px solid #ffea00;
+  background: #ff2a00;
+  color: black;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background: #ffea00;
+}
+
+.footer {
+  margin-top: 30px;
+  color: gray;
+  font-size: 0.7em;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.card {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid #ff2a00;
+  border-radius: 10px;
+  background: #111;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #ffea00;
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
