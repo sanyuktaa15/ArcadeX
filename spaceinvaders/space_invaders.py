@@ -12,22 +12,22 @@ WIN = pygame.display.set_mode((WIDTH , HEIGHT)) #by this we set the window
 pygame.display.set_caption("Space Invaders") #named the window, by default it would be "pygame window"
 
 #load images
-RED_SPACESHIP = pygame.image.load(os.path.join("assets" , "pixel_ship_red_small.png"))
+RED_SPACESHIP = pygame.image.load(os.path.join("Assets" , "pixel_ship_red_small.png"))
                 #from the pygame module use the image.load method, then load the image that is located at os.path.join which is in assets
-GREEN_SPACESHIP = pygame.image.load(os.path.join("assets" , "pixel_ship_green_small.png"))
-BLUE_SPACESHIP = pygame.image.load(os.path.join("assets" , "pixel_ship_blue_small.png"))
+GREEN_SPACESHIP = pygame.image.load(os.path.join("Assets" , "pixel_ship_green_small.png"))
+BLUE_SPACESHIP = pygame.image.load(os.path.join("Assets" , "pixel_ship_blue_small.png"))
 
 #player ship
-YELLOW_SPACESHIP = pygame.image.load(os.path.join("assets" , "pixel_ship_yellow.png"))
+YELLOW_SPACESHIP = pygame.image.load(os.path.join("Assets" , "pixel_ship_yellow.png"))
 
 #lasers
-RED_LASER = pygame.image.load(os.path.join("assets" , "pixel_laser_red.png"))
-GREEN_LASER = pygame.image.load(os.path.join("assets" , "pixel_laser_green.png"))
-BLUE_LASER = pygame.image.load(os.path.join("assets" , "pixel_laser_blue.png"))
-YELLOW_LASER = pygame.image.load(os.path.join("assets" , "pixel_laser_yellow.png"))
+RED_LASER = pygame.image.load(os.path.join("Assets" , "pixel_laser_red.png"))
+GREEN_LASER = pygame.image.load(os.path.join("Assets" , "pixel_laser_green.png"))
+BLUE_LASER = pygame.image.load(os.path.join("Assets" , "pixel_laser_blue.png"))
+YELLOW_LASER = pygame.image.load(os.path.join("Assets" , "pixel_laser_yellow.png"))
 
 #background 
-BG = pygame.transform.scale(pygame.image.load(os.path.join("assets" , "background-black.png")) , (WIDTH , HEIGHT)) #two arguments, the bg img and its scale
+BG = pygame.transform.scale(pygame.image.load(os.path.join("Assets" , "background-black.png")) , (WIDTH , HEIGHT)) #two arguments, the bg img and its scale
 
 class Laser:
     def __init__(self, x , y, img):

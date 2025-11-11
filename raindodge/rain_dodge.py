@@ -10,14 +10,14 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))  #tuples
 pygame.display.set_caption("Space Dodge")  #we wrote title of the game
 #WIN is a surface object, badme used to draw things
 
-BG = pygame.image.load("bgimg.png")  #attached the bg pic
+BG = pygame.image.load("imgs/bgimg.png")  #attached the bg pic
 BG = pygame.transform.scale(BG, (WIDTH, HEIGHT))  #this is necessary otherwise if the image is not 1000x600, it will not fill  up the screen
 
 PLAYER_WIDTH = 120 
 PLAYER_HEIGHT = 130
 PLAYER_VELOCITY = 5
 
-PLAYER_IMG = pygame.image.load("player.png").convert_alpha()
+PLAYER_IMG = pygame.image.load("imgs/player.png").convert_alpha()
 PLAYER_IMG = pygame.transform.scale(PLAYER_IMG, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
 PLAYER_VELOCITY = 5

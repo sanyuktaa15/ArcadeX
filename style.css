@@ -9,8 +9,10 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url('./background images/bg.png'); 
-  background-size: cover;         
+  background-image: url('./website_imgs/gamezone.webp');
+
+  background-size: cover;       
+  background-position: center;  
   background-repeat: no-repeat;   
   background-attachment: fixed;  
   /* Important for covering the whole page: */ 
@@ -29,27 +31,47 @@ body {
 
 .title {
   margin-bottom: 0px;
-  font-size: 4rem;
-  color: #ffea00;
-  text-shadow: 0 0 10px #ffea00, 0 0 25px #ff2a00;
+  font-size: 6rem;
+  color: #f1e53b;
+  text-shadow: 0 0 10px #ff6105, 0 0 25px #ffb005, 0 0 40px #ff2a00, 0 0 80px #ff2a00;
+  letter-spacing: 6px;
+  transform: translateY(-130px); /* pushes it upward slightly */
+  transition: text-shadow 0.1s ease-in-out;
 }
 
+
 .x {
-  color: #ff2a00;
+  color: #da2602; /* bright red X */
+  text-shadow:
+    0 0 10px #ffd105,
+    0 0 25px #ff6105,
+    0 0 40px #ff6105,
+    0 0 60px #ffbc05;
 }
+
 
 button {
   font-family: 'Press Start 2P', cursive;
   margin-top: 3rem;
   background-color: #ff2a00;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   padding: 15px 30px;
   cursor: pointer;
+  border-radius: 9px;
+  border: none;
   transition: 0.3s;
-  border-radius:9px ;
-  border-width: 0px;
+  transform: translateY(-90px); /* pushes it upward slightly */
+
+  /* Softer glow */
+  box-shadow:
+    0 0 6px #ff2a00,
+    0 0 15px #ffea00;
+  text-shadow:
+    0 0 5px #ffea00;
 }
+
+
 
 button:hover {
   background-color: #ffea00;
@@ -60,78 +82,92 @@ button:hover {
   display: none;
 }
 
-/* --- Game Menu Page --- */
+/* --- Game Menu Section --- */
 #game-section {
-  padding: 40px 20px;
-  color: #ffea00;
+  padding: 50px 30px;
+  color: #e0ee20;
+  text-align: center;
 }
 
-#game-section h2 {
-  
-  font-size: 1rem;
+#game-section h1 {
+  font-size: 3.5rem;
   margin-bottom: 2rem;
+  margin-top: 0.4rem;
+  text-shadow: 0 0 10px #ffea00, 0 0 40px #ff0000;
 }
 
-/* Grid layout for game cards */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  justify-items: center;
+/* --- Game Row --- */
+.game-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* makes it responsive */
+  gap: 30px;
 }
 
-/* Game Cards */
+/* --- Game Cards --- */
 .card {
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.85);
   border: 3px solid #ff2a00;
-  border-radius: 15px;
-  padding: 15px;
-  width: 180px;
-  transition: 0.3s;
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #ff2a00;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
 }
 
 .card:hover {
+  transform: scale(1.07);
   border-color: #ffea00;
-  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffea00;
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 4 / 3;  /* keeps images square */
+  object-fit: contain;  /* keeps the image undistorted */
+  border-radius: 10px;
+  background-color: #000; /* subtle background frame if image has transparency */
+  padding: 10px;
+  margin-bottom: 1rem ;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  color: #ffea00;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .card p {
-  font-size: 0.6rem;
-  color: #ffea00;
-  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 1.4;
+  padding: 0 5px;
 }
 
-/* --- Mobile adjustments --- */
-@media (max-width: 600px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  button {
-    font-size: 0.7rem;
-    padding: 10px 20px;
-  }
-
-  #game-section h2 {
-    font-size: 0.8rem;
-  }
-
+/* --- Mobile Adjustments --- */
+@media (max-width: 768px) {
   .card {
-    width: 150px;
+    width: 180px;
   }
 
   .card img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .card h3 {
+    font-size: 0.8rem;
   }
 
   .card p {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
   }
 }
