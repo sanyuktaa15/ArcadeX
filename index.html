@@ -5,7 +5,11 @@
   <title>Arcadex</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Pyodide (WebAssembly Python runtime) -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"></script>
 </head>
+
 <body>
   <!-- Start Page -->
   <div class="container" id="start-page">
@@ -13,7 +17,7 @@
     <button id="start-btn">PRESS START</button>
   </div>
 
-  <!-- Menu Page -->
+  <!-- Game Menu Page -->
   <div id="game-section" class="hidden">
     <h1>Choose Your Game</h1>
 
@@ -43,7 +47,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="script.js"></script>
 </body>
