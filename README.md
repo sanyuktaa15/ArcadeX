@@ -8,11 +8,12 @@
 
 | | |
 |---|---|
-| 🖥️ **Portal Homepage** | *(add screenshot here)* |
-| 🚗 **Car Racing** | *(add screenshot here)* |
-| 🚀 **Galaxy Fighters** | *(add screenshot here)* |
-| 🌧️ **Rain Dodge** | *(add screenshot here)* |
-| 👾 **Space Invaders** | *(add screenshot here)* |
+| 🖥️ **Website Homepage** | ![Website](screenshots/website_homepage.png) |
+| 🖥️ **Portal Games Section** | ![Website Games](screenshots/website_games.png) |
+| 🚗 **Car Racing** | ![Car Racing](screenshots/carracing.png) |
+| 🚀 **Galaxy Fighters** | ![Galaxy Fighters](screenshots/galaxyfighters.png) |
+| 🌧️ **Rain Dodge** | ![Rain Dodge](screenshots/raindodge.png) |
+| 👾 **Space Invaders** | ![Space Invaders](screenshots/spaceinvaders.png) |
 
 
 ---
