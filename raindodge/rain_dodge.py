@@ -3,11 +3,10 @@ import time
 import random
 pygame.font.init() #initialize the font module -- reuirement of the pygame!!
 
-
 #creating windows
 WIDTH, HEIGHT = 800 , 500  #comstant values 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))  #tuples
-pygame.display.set_caption("Space Dodge")  #we wrote title of the game
+pygame.display.set_caption("Rain Dodge")  #we wrote title of the game
 #WIN is a surface object, badme used to draw things
 
 BG = pygame.image.load("imgs/bgimg.png")  #attached the bg pic
